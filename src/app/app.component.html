@@ -8,7 +8,18 @@
 
 </div>
 
-<button pButton (click)="showName()" label="Change name"></button>
+<button
+  pButton
+  icon="pi pi-check"
+  iconPos="right"
+  class="p-button-help"
+  (click)="showName()"
+  label="Change name"></button>
+
+<p-card [header]="name | titlecase"
+        subheader="Subheader">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus deserunt doloribus ea et ex incidunt iste iusto magni nam nihil perferendis porro quas qui quis sit tempore tenetur, veniam?
+</p-card>
 
 
 
