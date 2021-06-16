@@ -12,5 +12,5 @@ lowerName: string = 'john';
 upperName: string = 'MICHAEL';
 completeName: string = 'kEviN';
 
-
+currentDate: Date = new Date();
 }
