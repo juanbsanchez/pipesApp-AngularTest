@@ -7,12 +7,19 @@
 
 <div class="p-grid">
   <div class="p-col-4">
-    <p-card header="uppercase">1</p-card>
+    <p-card
+      header="uppercase"
+      [subheader]="lowerName | uppercase">
+    </p-card>
   </div>
   <div class="p-col-4">
-    <p-card>2</p-card>
+    <p-card
+    header="lowercase"
+    [subheader]="upperName | lowercase"></p-card>
   </div>
   <div class="p-col-4">
-    <p-card>3</p-card>
+    <p-card
+    header="titlecase"
+    [subheader]="completeName | titlecase"></p-card>
   </div>
 </div>
