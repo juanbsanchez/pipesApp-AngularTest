@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api'
 
 
 @Component({
@@ -6,12 +7,19 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent{
 
   name: string = 'john smith';
   value: number = 1000;
   obj = {
     name: 'Michael'
+  }
+
+  constructor(private primengConfig: PrimeNGConfig) {
+  }
+
+  ngOnInit(){
+    this.primengConfig.ripple = true; //bubble effect on fieldset header
   }
 
   showName(){

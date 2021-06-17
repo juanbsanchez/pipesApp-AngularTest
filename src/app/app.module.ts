@@ -9,6 +9,7 @@ import {SalesModule} from "./sales/sales.module";
 import localEs from '@angular/common/locales/es';
 import localFr from '@angular/common/locales/fr';
 import {registerLocaleData} from '@angular/common';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 registerLocaleData(localEs);
 registerLocaleData(localFr);
 
@@ -19,9 +20,10 @@ registerLocaleData(localFr);
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRouterModule,
     SharedModule,
-    SalesModule
+    SalesModule,
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'es'}
