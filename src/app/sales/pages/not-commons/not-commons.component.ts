@@ -26,4 +26,13 @@ export class NotCommonsComponent {
     'other': 'tenemos # clientes esperando'
   }
 
+  changeClient(){
+    this.name = 'John';
+    this.gender = 'man';
+  }
+
+  removeClient(){
+    this.clients.shift()
+  }
+
 }
