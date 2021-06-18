@@ -6,6 +6,7 @@
 </div>
 
 <div class="p-grid">
+
   <div class="p-col p-md-6">
     <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
       <p>
@@ -20,4 +21,24 @@
       <p-button (click)="removeClient()" label="Borrar cliente" class="p-button-help"></p-button>
     </p-fieldset>
   </div>
+
+  <div class="p-col p-md-6">
+    <p-fieldset legend="Slice Pipe" [toggleable]="true">
+
+      <b>Original</b>
+      <pre>{{ clients }}</pre>
+
+      <b>slice:0:2</b>
+      <pre>{{ clients | slice:0:2}}</pre>
+
+      <b>slice:1:2</b>
+      <pre>{{ clients | slice:1:2}}</pre>
+
+      <b>slice:0:3 - string: Isabel</b>
+      <pre>{{ name | slice:0:3}}</pre>
+
+    </p-fieldset>
+  </div>
+
+
 </div>
