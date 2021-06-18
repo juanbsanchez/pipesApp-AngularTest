@@ -35,4 +35,11 @@ export class NotCommonsComponent {
     this.clients.shift()
   }
 
+  // KeyValue Pipe
+  person = {
+    name: 'Michael',
+    age: 35,
+    address: 'Ottawa, Canada'
+  }
+
 }
