@@ -1,4 +1,9 @@
 <div class="text-layout">
   <h1>Custom Pipes</h1>
-  <p>{{ 'hello' | customUppercase}}</p>
+  <p>{{ 'hello' | customUppercase:uppercase}}</p>
+
+  <p-button
+    (click)="toUppercase()"
+    label="{{ 'toggle uppercase' | customUppercase:uppercase }}">
+  </p-button>
 </div>

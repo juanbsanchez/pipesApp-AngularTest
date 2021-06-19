@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class OrderComponent implements OnInit {
+  uppercase: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toUppercase(){
+    this.uppercase = !this.uppercase;
   }
 
 }

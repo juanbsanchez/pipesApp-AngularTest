@@ -5,8 +5,13 @@ import {Pipe, PipeTransform} from "@angular/core";
 })
 export class CustomUppercasePipe implements PipeTransform{
 
-  transform(arg: string): string {
-    return 'HELLO WORLD';
+
+  transform(value: string, toUppercase: boolean = true): string {
+
+    return toUppercase ? value.toUpperCase() : value.toLowerCase();
+
   }
+
+
 
 }
