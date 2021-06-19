@@ -68,4 +68,19 @@
 
   </div>
 
+  <div class="p-col p-md-6">
+
+    <p-fieldset legend="Async Pipe" [toggleable]="true">
+
+     <pre>
+       {{ myObservable | async }}
+     </pre>
+
+      <pre *ngIf="!(promiseValue | async)">Loading promise data...</pre>
+      <pre>{{promiseValue | async }}</pre>
+
+    </p-fieldset>
+
+  </div>
+
 </div>
