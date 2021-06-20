@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import {Color, Heroe} from "../../interfaces/sales.interface";
 
 @Component({
   selector: 'app-order',
@@ -6,13 +7,37 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class OrderComponent implements OnInit {
+export class OrderComponent {
+
   uppercase: boolean = false;
+  heroes: Heroe[] = [
+    {
+      name: 'Superman',
+      fly: true,
+      color: Color.blue
+    },
+    {
+      name: 'Batman',
+      fly: false,
+      color: Color.black
+    },
+    {
+      name: 'Robbin',
+      fly: false,
+      color: Color.green
+    },
+    {
+      name: 'Daredevil',
+      fly: false,
+      color: Color.red
+    },
+    {
+      name: 'Green Lantern',
+      fly: true,
+      color: Color.green
+    }
+  ]
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   toUppercase(){
     this.uppercase = !this.uppercase;
