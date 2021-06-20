@@ -25,7 +25,7 @@
 
     <button pButton
             icon="pi pi-sort"
-            label="Values"
+            label="Fly"
             class="p-mr-1 p-button-success"
     ></button>
 
@@ -39,7 +39,7 @@
 
 <div class="p-grid p-mt-2">
   <div class="p-col">
-    <p-table [value]="heroes">
+    <p-table [value]="heroes | order">
       <ng-template pTemplate="header">
         <tr>
           <th>Name</th>

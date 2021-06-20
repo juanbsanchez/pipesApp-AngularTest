@@ -10,6 +10,7 @@ import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
 import {CustomUppercasePipe} from "./pipes/customUppercase.pipe";
 import {FlyPipe} from "./pipes/fly.pipe";
+import { OrderPipe } from './pipes/order.pipe';
 
 
 
@@ -21,7 +22,8 @@ import {FlyPipe} from "./pipes/fly.pipe";
     BasicsComponent,
     OrderComponent,
     CustomUppercasePipe,
-    FlyPipe
+    FlyPipe,
+    OrderPipe
   ],
   imports: [
     CommonModule,
