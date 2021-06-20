@@ -21,25 +21,28 @@
             icon="pi pi-sort"
             label="Order by name"
             class="p-mr-1 p-button-warning"
+            (click)="modifyOrder('name')"
     ></button>
 
     <button pButton
             icon="pi pi-sort"
             label="Fly"
             class="p-mr-1 p-button-success"
+            (click)="modifyOrder('fly')"
     ></button>
 
     <button pButton
             icon="pi pi-sort"
             label="By Color"
             class="p-mr-1 p-button-help"
+            (click)="modifyOrder('color')"
     ></button>
   </div>
 </p-toolbar>
 
 <div class="p-grid p-mt-2">
   <div class="p-col">
-    <p-table [value]="heroes | order">
+    <p-table [value]="heroes | order:orderBy">
       <ng-template pTemplate="header">
         <tr>
           <th>Name</th>
