@@ -9,6 +9,7 @@ import { NotCommonsComponent } from './pages/not-commons/not-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
 import {CustomUppercasePipe} from "./pipes/customUppercase.pipe";
+import {FlyPipe} from "./pipes/fly.pipe";
 
 
 
@@ -19,7 +20,8 @@ import {CustomUppercasePipe} from "./pipes/customUppercase.pipe";
     NotCommonsComponent,
     BasicsComponent,
     OrderComponent,
-    CustomUppercasePipe
+    CustomUppercasePipe,
+    FlyPipe
   ],
   imports: [
     CommonModule,
